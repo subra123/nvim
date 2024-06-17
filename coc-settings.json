@@ -1,0 +1,26 @@
+{
+    "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+            "filetypes": ["c", "cpp", "objc", "objcpp"],
+            "initializationOptions": {
+                "clangdFileStatus": true
+            }
+        },
+        "dartls": {
+            "command": "dart",
+            "args": ["language-server", "--protocol=lsp"],
+            "filetypes": ["dart"],
+            "rootPatterns": ["pubspec.yaml"],
+            "initializationOptions": {
+                "onlyAnalyzeProjectsWithOpenFiles": true,
+                "suggestFromUnimportedLibraries": true
+            }
+        }
+    },
+    "flutter-tools": {
+        "flutterSdkPath": "C:\\src\\flutter"  // Update this path to your Flutter SDK path
+    }
+}
+
